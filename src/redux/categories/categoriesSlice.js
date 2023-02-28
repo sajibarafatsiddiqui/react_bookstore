@@ -12,5 +12,5 @@ const categoriesSlice = createSlice({
     checkStatus: (state) => state.status,
   },
 });
-// console.log(booksSlice);
+
 export default categoriesSlice.reducer;
