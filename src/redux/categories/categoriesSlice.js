@@ -14,3 +14,4 @@ const categoriesSlice = createSlice({
 });
 
 export default categoriesSlice.reducer;
+export const { checkStatus } = categoriesSlice.actions;
