@@ -1,15 +1,20 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from 'redux/books/booksSlice';
+import { v4 as uuidv4 } from 'uuid';
 
 const InputBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const itemId = uuidv4();
+  const category = '';
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title.trim() && author.trim()) {
-      dispatch(addBook({ title, author }));
+      dispatch(addBook({
+        itemId, title, author, category,
+      }));
     }
     setTitle('');
     setAuthor('');

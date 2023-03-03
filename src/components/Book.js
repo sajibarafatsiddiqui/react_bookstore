@@ -4,6 +4,7 @@ import { removeBook } from 'redux/books/booksSlice';
 
 const Book = ({ bookProp }) => {
   const dispatch = useDispatch();
+
   return (
     <li>
       <div>
