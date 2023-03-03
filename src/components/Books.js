@@ -2,16 +2,18 @@ import PropTypes from 'prop-types';
 import Book from 'components/Book';
 
 const Books = ({ books }) => (
+  { books }
+  && (
   <ul>
-    {books.map((book) => (
+    { books?.map((book) => (
       <Book key={book.item_id} bookProp={book} />
     ))}
   </ul>
+  )
 );
 
 Books.propTypes = {
   books: PropTypes.arrayOf(PropTypes.shape({
-    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   })).isRequired,
