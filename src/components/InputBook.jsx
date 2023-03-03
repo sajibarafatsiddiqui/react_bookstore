@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import cx from 'classnames';
+import styles from 'styles/Book.module.css';
 import { addBook } from 'redux/books/booksSlice';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -20,10 +22,11 @@ const InputBook = () => {
     setAuthor('');
   };
   return (
-    <>
-      <form onSubmit={handleSubmit}>
+    <div className="center mb-2rem">
+      <h2 className="secondary fs-1-2rem mb-0-5rem">ADD NEW BOOK</h2>
+      <form onSubmit={handleSubmit} className={styles.book__addform}>
         <input
-          className="input-text"
+          className={cx(styles.addform__input, styles.flex - 1)}
           type="text"
           value={title}
           placeholder="Add Book"
@@ -32,7 +35,7 @@ const InputBook = () => {
           }}
         />
         <input
-          className="input-text"
+          className={styles.addform__input}
           type="text"
           value={author}
           placeholder="Author"
@@ -40,9 +43,9 @@ const InputBook = () => {
             setAuthor(e.target.value);
           }}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className="blue-button bold">Submit</button>
       </form>
-    </>
+    </div>
   );
 };
 export default InputBook;
