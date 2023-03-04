@@ -27,14 +27,13 @@ const InputBook = () => {
         <h2 className="secondary fs-1-2rem mb-0-5rem">ADD NEW BOOK</h2>
         <form onSubmit={handleSubmit} className={styles.book__addform}>
           <input
-            className={cx(styles.addform__input, styles.flex - 1)}
+            className={cx(styles.addform__input, styles.flex_1)}
             type="text"
             value={title}
             placeholder="Book Title"
             onChange={(e) => {
               setTitle(e.target.value);
             }}
-            size="90"
           />
           <input
             className={styles.addform__input}
@@ -44,9 +43,8 @@ const InputBook = () => {
             onChange={(e) => {
               setAuthor(e.target.value);
             }}
-            size="40"
           />
-          <button type="submit" className={`blue-button bold ${styles.btn_width}`}>ADD BOOK</button>
+          <button type="submit" className=" blue-button bold">ADD BOOK</button>
         </form>
       </div>
     </>

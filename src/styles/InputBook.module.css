@@ -14,12 +14,12 @@
   font-weight: 400;
 }
 
-.btn_width {
-  width: 20rem;
-}
-
 .addform__input {
   padding: 0.5rem 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
+
+.flex_1 {
+    flex: 1;
+  }
