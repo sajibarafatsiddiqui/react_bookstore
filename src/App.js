@@ -1,4 +1,3 @@
-import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import BookStore from 'routes/BookStore';
 import Categories from 'routes/Categories';
