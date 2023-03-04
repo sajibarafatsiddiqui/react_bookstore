@@ -11,6 +11,7 @@ const Book = ({ bookProp }) => {
     <li className={styles.book}>
       <div className={styles.book__details}>
         <div>
+          <p className={styles.book__category}>Action</p>
           <h2 className={styles.book__title}>{bookProp.title}</h2>
           <p className={styles.book__author}>{bookProp.author}</p>
           <div className={styles.book__buttons}>
@@ -36,15 +37,15 @@ const Book = ({ bookProp }) => {
             </svg>
           </div>
           <div>
-            <h3 className={styles.book__percentage}>65%</h3>
-            <p className={styles.secondary}>completed</p>
+            <h3 className={styles.book__percentage}>60%</h3>
+            <p className="secondary">completed</p>
           </div>
         </div>
-        <div className={styles.book__chapter}>
-          <p className="secondary">CURRENT CHAPTER</p>
-          <h3 className={styles.chapter__num}>Chapter 17</h3>
-          <button className={styles.blue_button} type="button">UPDATE PROGRESS</button>
-        </div>
+      </div>
+      <div className={styles.book__chapter}>
+        <p className="secondary">CURRENT CHAPTER</p>
+        <h3 className={styles.chapter__num}>Chapter 17</h3>
+        <button className={styles.blue_button} type="button">UPDATE PROGRESS</button>
       </div>
     </li>
   );

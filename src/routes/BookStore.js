@@ -11,10 +11,10 @@ const BookStore = () => {
     dispatch(fetchAllBooks());
   }, [dispatch]);
   return (
-    <section>
+    <>
       <Books books={books} />
       <InputBook />
-    </section>
+    </>
   );
 };
 

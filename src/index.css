@@ -58,6 +58,11 @@ button {
 
 .secondary {
   color: #939293;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pt-1dot8rem {
+  padding-top:1.8rem;
 }
 
 .mt-1rem {

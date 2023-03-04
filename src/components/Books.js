@@ -10,6 +10,7 @@ const Books = ({ books }) => (
     { books?.map((book) => (
       <Book key={book.item_id} bookProp={book} />
     ))}
+    <hr className={styles.books__divisor} />
   </ul>
   )
 );

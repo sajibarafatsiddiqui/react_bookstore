@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-body {
-  font-family: 'Roboto Slab', serif;
-}
-
 .books_container {
   padding-top: 2rem;
   display: grid;
@@ -13,7 +9,8 @@ body {
 .books-container,
 .books__divisor {
   --margin-divisor: 2rem;
-
+ width:90%;
+ justify-self: center;
   margin-block-start: var(--margin-divisor);
 }
 
@@ -24,19 +21,25 @@ body {
 
 .book,
 .book__details {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.book,
+.book__details,
+.book__progress {
+  display:flex;
+}
+
 .book {
+  font-family: 'Roboto Slab', serif;
   border: 1px solid #e8e8e8;
   background-color: white;
   padding: 1.5rem;
   width: 90%;
   justify-self: center;
-
   --separation: 2.8rem;
+  padding-right: 8rem;
 }
 
 .book__details {
@@ -88,7 +91,6 @@ body {
 }
 
 .book__progress {
-  display: flex;
   align-items: center;
   gap: 0.8rem;
 }
@@ -143,13 +145,4 @@ body {
   font-size: 2.2rem;
   line-height: 2.2rem;
   font-weight: 400;
-}
-
-.book__addform {
-  display: flex;
-  gap: 2rem;
-}
-
-.addform__input {
-  padding: 0.5rem 1rem;
 }
