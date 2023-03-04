@@ -9,8 +9,9 @@
 .books-container,
 .books__divisor {
   --margin-divisor: 2rem;
- width:90%;
- justify-self: center;
+
+  width: 90%;
+  justify-self: center;
   margin-block-start: var(--margin-divisor);
 }
 
@@ -28,7 +29,7 @@
 .book,
 .book__details,
 .book__progress {
-  display:flex;
+  display: flex;
 }
 
 .book {
@@ -38,7 +39,9 @@
   padding: 1.5rem;
   width: 90%;
   justify-self: center;
+
   --separation: 2.8rem;
+
   padding-right: 8rem;
 }
 

@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 .add__book {
-    font-family: 'Montserrat', sans-serif;
-    width:90%;
-    justify-self: center; 
-    margin:auto;
-    padding-bottom: 10rem; 
+  font-family: 'Montserrat', sans-serif;
+  width: 90%;
+  justify-self: center;
+  margin: auto;
+  padding-bottom: 10rem;
 }
+
 .book__addform {
-    display: flex;
-    gap: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-  }
- 
-.btn_width {
-    width:20rem;
+  display: flex;
+  gap: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
-  
-  .addform__input {
-    padding: 0.5rem 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-  }
-  
+
+.btn_width {
+  width: 20rem;
+}
+
+.addform__input {
+  padding: 0.5rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
